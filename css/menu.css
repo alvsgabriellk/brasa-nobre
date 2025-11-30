@@ -1,21 +1,20 @@
-/* Definição de Variáveis de Cor (Opcional, mas útil) */
 :root {
-    --card-background: #ffffff; /* Fundo do card branco ou cinza claro */
-    --price-color: #007bff; /* Cor do preço (pode ser azul do botão) */
-    --text-light: #6c757d; /* Cor do texto de descrição */
+    --card-background: #ffffff; 
+    --price-color: #007bff; 
+    --text-light: #6c757d;
     --hover-text: #ffffff; 
 }
 
 body {
      
     background-image: url('../static/img/backgraund\(fundo\ para\ menu\).avif');
-    background-size: cover;       /* Faz a imagem cobrir toda a tela */
-    background-position: center;  /* Centraliza a imagem */
-    background-repeat: no-repeat; /* Não repetir a imagem */
-    background-attachment: fixed; /* Faz o fundo ficar fixo (opcional) */
+    background-size: cover;       
+    background-position: center;  
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
 }
 
-/* ESTILOS DE TÍTULO */
+
 .menu-title-wrapper {
     display: flex;
     align-items: center;
@@ -26,7 +25,7 @@ body {
 .line {
     width: 60px;
     height: 2px;
-    background-color: #19497d; /* Cor para a linha */
+    background-color: #19497d; 
     display: inline-block;
 }
 
@@ -40,24 +39,22 @@ body {
     max-width: 550px;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 40px; /* Adiciona espaço abaixo do subtítulo */
+    margin-bottom: 40px; 
     color: white;
 }
 
-/* ESTILOS DOS BOTÕES DE NAVEGAÇÃO (TABS) */
 
-/* 🟢 CORREÇÃO: Garante espaçamento entre os botões da lista */
+
+
 .nav-pills {
-    /* Use gap para espaçamento consistente entre os botões flexíveis */
-    gap: 15px; /* Aumenta o espaçamento entre os botões */
-    flex-wrap: wrap; /* Garante que os botões quebrem a linha se não houver espaço */
-    justify-content: center; /* Centraliza os botões */
-    margin-bottom: 20px; /* Adiciona um pouco de espaço abaixo dos botões, antes dos cards */
+    gap: 15px; 
+    flex-wrap: wrap;
+    justify-content: center; 
+    margin-bottom: 20px; 
 }
 
-/* 🟢 CORREÇÃO: Remove estilos problemáticos do .nav-item */
+
 .nav-item {
-    /* Remove qualquer padding/margin/border-radius que possa estar comprimindo */
     padding: 0 !important;
     margin: 0 !important;
     border-radius: 0 !important; 
@@ -67,9 +64,9 @@ body {
 .nav-pills .nav-link {
     border-radius: 25px;
     transition: 0.2s;
-    background-color: rgba(0, 0, 0, 0.05); /* Fundo sutil para os botões inativos */
-    color: white; /* Cor do texto dos botões inativos */
-    padding: 8px 16px; /* Padding interno do botão */
+    background-color: rgba(0, 0, 0, 0.05); 
+    color: white; 
+    padding: 8px 16px; 
 }
 
 .nav-pills .nav-link.active {
@@ -83,32 +80,24 @@ body {
     color: var(--hover-text) !important;
 }
 
-
-/* ---------------------------------------------------------------- */
-/* --- INÍCIO: ESTILOS PARA OS CARDS (Layout Lateral e Grid) --- */
-/* ---------------------------------------------------------------- */
-
-/* 1. CONTAINER DA GRADE (CRIA AS 2 COLUNAS) */
 .cards-cardapios.menu-grid {
     display: grid;
-    /* Duas colunas de largura igual, com espaçamento */
     grid-template-columns: 1fr 1fr; 
-    gap: 20px 30px; /* Espaçamento entre linhas e colunas */
+    gap: 20px 30px; 
     margin: 0 auto;
     padding: 20px;
 }
 
-/* RESPONSIVIDADE PARA 1 COLUNA EM TELAS PEQUENAS */
-@media (max-width: 992px) { /* Em tablets e celulares, quebra para 1 coluna */
+
+@media (max-width: 992px) { 
     .cards-cardapios.menu-grid {
         grid-template-columns: 1fr;
     }
 }
 
-/* 2. ESTILO DO CARD INDIVIDUAL (LAYOULT LATERAL: FOTO ESQUERDA, TEXTO DIREITA) */
 .menu-item-card {
-    display: flex; /* ATIVA O FLEXBOX PARA LAYOUT LATERAL */
-    align-items: flex-start; /* Alinha o conteúdo ao topo */
+    display: flex; 
+    align-items: flex-start; 
     background-color: var(--card-background); 
     background-color: #4A2C2A;
     border-radius: 8px; 
@@ -122,7 +111,7 @@ body {
 }
 
 .item-image {
-    flex-shrink: 0; /* Impede que a foto encolha */
+    flex-shrink: 0; 
     width: 100px; 
     height: 100px;
     margin-right: 15px; 
@@ -137,10 +126,9 @@ body {
 }
 
 .item-details {
-    flex-grow: 1; /* Ocupa o espaço restante */
+    flex-grow: 1; 
 }
 
-/* Estilos de conteúdo dentro do card */
 .item-header {
     display: flex;
     align-items: center;
@@ -165,7 +153,7 @@ body {
 
 .tag {
     font-size: 0.75em;
-    background-color: white; /* Cor verde para destaque */
+    background-color: white;
     padding: 3px 8px;
     border-radius: 4px;
     color: rgb(144, 30, 30);
@@ -178,7 +166,3 @@ body {
     margin-bottom: 10px;
     color: white;
 }
-
-/* ---------------------------------------------------------------- */
-/* --- FIM: ESTILOS PARA OS CARDS --- */
-/* ---------------------------------------------------------------- */

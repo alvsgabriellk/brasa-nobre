@@ -1,14 +1,7 @@
 body {
-    /* 1. Define o caminho para a sua imagem. Substitua 'caminho/sua-imagem.jpg' pelo local correto do seu arquivo. */
     background-image: url('../static/img/bodyfundo4.jpg'); 
-    
-    /* 2. Impede que a imagem se repita (tiling). */
     background-repeat: no-repeat;
-    
-    /* 3. Garante que a imagem cubra toda a área do body. */
     background-size: cover;
-    
-    /* 4. Fixa a imagem na viewport, então ela não rola com o conteúdo (efeito paralaxe). */
     background-attachment: fixed;
 }
 
@@ -20,13 +13,12 @@ body {
 }
 
 .hero-section {
-    /* Adiciona a imagem de fundo */
     background-image: url('../static/img/fundoprinc3.webp');
     
-    /* Configurações para a imagem */
-    background-size: cover;       /* Garante que a imagem cubra toda a seção */
-    background-position: center;  /* Centraliza a imagem */
-    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    /* Config para a imagem */
+    background-size: cover;       
+    background-position: center; 
+    background-repeat: no-repeat; 
     min-height: 600px;
     padding-top: 80px;
     position: relative;
@@ -35,9 +27,6 @@ body {
 .text-blue {
     color: #A82C2C;
 }
-
-/* Botão "Sobre" - De btn-light (Branco) para Fundo Azul */
-
 
 .btn-sobre-hero {
     background-color: #A82C2C !important;
@@ -48,23 +37,19 @@ body {
 
 .btn-sobre-hero:hover {
     background-color: #B88A00 !important;
-    transform: translateY(-2px) !important; /* Efeito sutil ao passar o mouse */
+    transform: translateY(-2px) !important; 
 }
-
-/* Efeito Hover do botão Sobre */
-
 
 .btn-menu {
     background-color: rgba(255, 255, 255, 0.232) !important;
-    color: #FFF8E1 !important; /* D - Creme Quente */
-    border: 2px solid #FFF8E1 !important; /* D - Creme Quente */
+    color: #FFF8E1 !important;
+    border: 2px solid #FFF8E1 !important; 
     transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease !important;
 }
 
-/* Botão "Menu" - Efeito Hover de Outline Light para Fundo Azul */
 .btn-menu:hover {
-    background-color: #FFF8E1 !important; /* Fundo Azul no hover */
-    color: #4E342E !important; /* Texto Branco no hover */
+    background-color: #FFF8E1 !important; 
+    color: #4E342E !important; 
 }
 
 .text-escolha {

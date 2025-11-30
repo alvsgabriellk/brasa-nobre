@@ -3,6 +3,12 @@
     padding: 0;
     margin: 0;
 }
+
+.body{
+    background-image: url('../static/img/post2.jpg')!important;
+    background-size: cover; 
+    margin: 10px;
+}
 .area-forms{
     display: flex;
     flex-direction: column;

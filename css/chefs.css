@@ -1,9 +1,4 @@
-*{
-    margin: 0;
-    padding: 0;
-}
-
-body{
+body {
     background-image: url('../static/img/bodyfundo4.jpg'); 
     background-repeat: no-repeat;
     background-size: cover;
@@ -11,8 +6,104 @@ body{
 }
 
 
+/* ================== TÍTULOS ================== */
+.title-main {
+    font-size: 3rem !important;
+    font-weight: 700 !important;
+    color: #B88A00 !important;
+}
+
+.subtitle-main {
+    font-size: 1.2rem !important;
+    color: #FFF8E1 !important;
+}
+
+/* ================== CHEF PRINCIPAL ================== */
+.chef-principal {
+    background: #4E342E !important;
+    color: #FFF8E1 !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.chef-principal:hover {
+    transform: translateY(-8px); 
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5) !important; 
+    border: 1px solid #B88A00; 
+}
+
+.img-chef {
+    width: 100% !important;
+    height: 350px !important; 
+    object-fit: cover !important;
+}
+
+.chef-name {
+    color: #B88A00 !important;
+    font-weight: 700 !important;
+    margin-top: 0.5rem; 
+}
+
+.chef-role {
+    font-size: 1.2rem !important;
+    margin-bottom: 10px !important;
+}
+
+.chef-text {
+    line-height: 1.6 !important;
+    text-align: justify; 
+}
+
+/* ================== CARDS SECUNDÁRIOS ================== */
+
+.card {
+    background-color: #4E342E !important;
+    color: #FFF8E1 !important;
+}
+
+/* Ajustes para as imagens dos cards menores: VOLTANDO PARA COVER COM MELHOR CONTROLE DE ALTURA */
+.img-card {
+    width: 100 !important;
+    height: 550px !important; 
+    object-fit: cover !important;
+}
 
 
+.chef-quote {
+    font-style: italic !important;
+    opacity: .9 !important;
+}
+
+/* EFEITO HOVER - Flutuar e Sombra */
+.card-hover-effect {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover-effect:hover {
+    transform: translateY(-8px); 
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5) !important; 
+    border: 1px solid #B88A00; 
+}
 
 
+/* ================== MOBILE ================== */
+@media (max-width: 992px) {
+    .img-chef {
+        height: 250px !important; 
+    }
+}
 
+@media (max-width: 768px) {
+    .title-main {
+        font-size: 2.2rem !important;
+    }
+
+    .img-card {
+        /* Altura ligeiramente menor em mobile para otimização */
+        height: 300px !important; 
+        width: 100% !important;
+    }
+    
+    .chef-text {
+        text-align: left;
+    }
+}

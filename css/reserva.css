@@ -91,7 +91,7 @@ button:hover{
 }   
 .titulo{
     font-weight: bold;
-    color: rgb(45, 111, 241)
+    color: #4A2C2A;
 }
 .boxes{
     margin-top: 3vh;
@@ -135,14 +135,15 @@ body{
 }
 
 .azultitulo{
-    color: rgb(45, 111, 241);
+    color: #D6B88C;
 }
 .subtit{
-    color: rgba(45, 110, 240, 0.575);
+    color: #D6B88C;
 }
 .botoes{
     display: flex;
-    gap: 3vh;
+    gap: 3vh; 
+    color:#D6B88C !important;
     
 }
 p{
@@ -150,7 +151,12 @@ p{
 }
 .pessoas{
     margin: 0px 7px 8px;
+    color:#8B0000 ;
 }
 footer{
     width: 100%;
+}
+
+.dia-hora{
+    color: black;
 }

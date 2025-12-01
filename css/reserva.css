@@ -4,35 +4,43 @@
     margin: 0;
 }
 
-.body{
-    background-image: url('../static/img/post2.jpg')!important;
-    background-size: cover; 
+.body {
+    background-image: url('../static/img/bodyfundo4.jpg') !important;
+    background-size: cover;
     margin: 10px;
 }
-.area-forms{
+
+.area-forms {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: 20px;
-    width:80vh;
-    box-shadow: 0 10px 20px rgba(0 , 0, 0, 0.2);
+    width: 80vh;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
     margin-top: 10vh;
-    background-color: white;
-
-
+    background-image: url('../static/img/bodyfundo4.jpg');
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.formular{
+
+.area-forms:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(255, 239, 239, 0.25);
+}
+
+.formular {
     display: flex;
     flex-direction: column;
     margin-bottom: 5vh;
 }
-.acima{
+
+.acima {
     font-size: 2vh;
     margin-left: 2%;
-    color: rgb(181, 146, 95);
+    color: #8B0000;
 }
-.nome{
+
+.nome {
     height: 3vh;
     background-color: rgba(177, 168, 168, 0.199);
     border-radius: 12px;
@@ -40,7 +48,8 @@
     box-shadow: 1px 2px 3px rgba(211, 207, 207, 0.863);
 
 }
-.numero{
+
+.numero {
     width: 20vh;
     height: 2vh;
     background-color: rgba(177, 168, 168, 0.199);
@@ -49,7 +58,8 @@
     box-shadow: 1px 2px 3px rgba(211, 207, 207, 0.863);
 
 }
-select{
+
+select {
     width: 20vh;
     height: 3vh;
     background-color: white;
@@ -57,7 +67,7 @@ select{
     border: 1px solid rgba(128, 128, 128, 0.151);
 }
 
-.area-grande{
+.area-grande {
     width: 40vh;
     height: 10vh;
     background-color: rgba(177, 168, 168, 0.199);
@@ -65,20 +75,23 @@ select{
     border: 0px;
     box-shadow: 1px 2px 3px rgb(196, 194, 194);
 }
-button{
+
+button {
     height: 5vh;
     width: 20vh;
-    box-shadow: 1px 2px 3px rgba(211, 207, 207, 0.863);
+   
     margin-left: 10px;
-    border-style: none  ;
+    border-style: none;
 }
-button:hover{
-    background-color: rgba(45, 110, 241) ;
-    box-shadow: 1px 2px 3px rgba(211, 207, 207, 0.863);
+
+button:hover {
+    background-color: rgba(45, 110, 241);
+  
     border-radius: 10px;
 
 }
-.area-recentes{
+
+.area-recentes {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -88,18 +101,21 @@ button:hover{
     width: 80vh;
     height: 60vh;
     background-color: white;
-}   
-.titulo{
+}
+
+.titulo {
     font-weight: bold;
     color: #4A2C2A;
 }
-.boxes{
+
+.boxes {
     margin-top: 3vh;
     display: flex;
     flex-direction: column;
     gap: 4vh;
 }
-.cards{
+
+.cards {
     width: 60vh;
     box-shadow: 0px 2px 6px rgba(128, 128, 128, 0.5);
     border-radius: 12px;
@@ -108,12 +124,14 @@ button:hover{
     justify-content: space-around;
     align-items: center;
 }
-.esquerdacard{
+
+.esquerdacard {
     color: rgb(181, 146, 95);
     font-size: 15px;
 
 }
-.direitacard{
+
+.direitacard {
     color: rgb(45, 111, 241);
     background-color: rgba(181, 147, 95, 0.349);
     align-items: center;
@@ -124,7 +142,7 @@ button:hover{
 }
 
 
-body{
+body {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -134,29 +152,44 @@ body{
     width: 100%;
 }
 
-.azultitulo{
-    color: #D6B88C;
+.azultitulo {
+    color: #8B0000;
 }
-.subtit{
-    color: #D6B88C;
+
+.subtit {
+    color: #8B0000 !important;
 }
-.botoes{
+
+.botoes {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.botoes:hover {
     display: flex;
-    gap: 3vh; 
-    color:#D6B88C !important;
-    
+    gap: 3vh;
+    color: #D6B88C !important;
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(255, 239, 239, 0.25);
 }
-p{
+
+.botao-cancelar {
+    background-color: #4A2C2A !important;
+    color: #D6B88C !important;
+    border-radius: 10px;
+}
+
+p {
     opacity: 60%;
 }
-.pessoas{
+
+.pessoas {
     margin: 0px 7px 8px;
-    color:#8B0000 ;
+    color: #8B0000;
 }
-footer{
+
+footer {
     width: 100%;
 }
 
-.dia-hora{
+.dia-hora {
     color: black;
 }

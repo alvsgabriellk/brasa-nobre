@@ -19,7 +19,7 @@
 
     <style>
         .fundo-contato {
-            background-image: url('../static/img/fundo-contato1.jpg');
+            background-image: url('../static/img/fundo-contato2.jpg');
             background-size: cover;
             /* faz a imagem cobrir todo o espaço */
             background-position: center;
@@ -35,9 +35,13 @@
             padding: 20px;
             border-radius: 15px;
             transition: all .35s ease;
-            background: white;
+            background: #4A2C2A;
             cursor: pointer;
+            color: #D77D2A;
+        }
 
+        .texto-secundario {
+            color: white !important;
         }
 
         /* Efeito ao passar o mouse */
@@ -54,21 +58,38 @@
 
         .info-hover:hover svg {
             transform: scale(1.2);
-            color: #4A2C2A;
+            color: #4A2C2A !important ;
         }
 
         .form-label {
-            color: white;
+            color: white !important;
         }
 
         .botão-enviar {
-            background-color: #8B0000;
-            border-color: #4A2C2A;
+            background-color: #8B0000 !important;
+            border-color: #4A2C2A!important;
         }
 
         .color-border {
-            outline: #8B0000;
+            outline: #8B0000 !important;
         }
+
+        .card-contato {
+            transition: transform 0.3s ease, box-shadow 0.3s ease !important;
+        
+        }
+
+        .mb-0 {
+            color: white !important;
+        }
+
+    
+
+        .card-contato:hover {
+            transform: translateY(-5px)!important;
+            box-shadow: 0 12px 25px rgba(255, 239, 239, 0.25) !important;
+        }
+
     </style>
 
 </head>
@@ -121,19 +142,19 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-10 col-lg-8">
-                    <h3 class="fs-5 mb-2 text-secondary text-uppercase">Contato</h3>
+                    <h3 class="fs-5 mb-2 text-secondary text-uppercase"></h3>
                 </div>
             </div>
         </div>
 
         <div class="container">
-            <div class="row gy-4 gy-md-5 gy-lg-0 align-items-md-center">
-                <div class="col-12 col-lg-6">
-                    <div class="border overflow-hidden">
+            <div class="row gy-4 gy-md-5 gy-lg-0 align-items-md-center " class="card-contato">
+                <div class="col-12 col-lg-6 card-contato" class="card-contato">
+                    <div class="" class="card-contato">
 
                         <form action="#!">
                             <div class="row gy-4 gy-xl-5 p-4 p-xl-5">
-                                <div class="col-12">
+                                <div class="col-12" class="card-contato">
                                     <label for="fullname" class="form-label">Nome completo <span
                                             class="text-danger">*</span></label>
                                     <input type="text" class="form-control" id="fullname" name="fullname" value=""
@@ -205,7 +226,7 @@
                                     <h4 class="mb-2">Localização</h4>
                                     <p class="mb-2">Por favor, visite-nos para conversarmos</p>
                                     <hr class="w-50 mb-3 border-dark-subtle">
-                                    <address class="m-0 text-secondary">Rua João Grilo e Chicó, 370 - Colinas do Sul,
+                                    <address class="text-secondary mb-0">Rua João Grilo e Chicó, 370 - Colinas do Sul,
                                         João Pessoa - PB, 58069-529</address>
                                 </div>
                             </div>
@@ -224,8 +245,8 @@
                                             <h4 class="mb-2">Número</h4>
                                             <p class="mb-2">Por favor, fale diretamente conosco.</p>
                                             <hr class="w-75 mb-3 border-dark-subtle">
-                                            <p class="mb-0">
-                                                <a class="link-secondary text-decoration-none"
+                                            <p class="text-secondary mb-0">
+                                                <a class="text-secondary mb-0"
                                                     href="tel:+15057922430">(83) 98621-1544</a>
                                             </p>
                                         </div>
@@ -236,10 +257,8 @@
                                         <div class="mb-3 text-primary">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
                                                 fill="currentColor" class="bi bi-envelope-at" viewBox="0 0 16 16">
-                                                <path
-                                                    d="" />
-                                                <path
-                                                    d="" />
+                                                <path d="" />
+                                                <path d="" />
                                             </svg>
                                         </div>
                                         <div class="mb-4 mb-sm-0 info-hover">
@@ -247,8 +266,8 @@
                                             <h4 class="mb-2">Email</h4>
                                             <p class="mb-2">Entre em contato caso tenha alguma dúvida.</p>
                                             <hr class="w-75 mb-3 border-dark-subtle">
-                                            <p class="mb-0">
-                                                <a class="link-secondary text-decoration-none"
+                                            <p class="text-secondary mb-0">
+                                                <a class="text-secondary mb-0"
                                                     href="mailto:demo@yourdomain.com">restaurantemare@gmail.com.br</a>
                                             </p>
                                         </div>
@@ -259,10 +278,8 @@
                                 <div class="mb-3 text-primary">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
                                         class="bi bi-alarm" viewBox="0 0 16 16">
-                                        <path
-                                            d="" />
-                                        <path
-                                            d="" />
+                                        <path d="" />
+                                        <path d="" />
                                     </svg>
                                 </div>
                                 <div class="info-hover">
